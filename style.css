@@ -349,7 +349,7 @@ footer .footer-copyright {
 @media only screen and (max-width: 480px) {
   .bg-principal {
     background-attachment: fixed;
-    background-image: url(../img/fondo1.jpg);
+    background-image: url(/img/fondo1.jpg);
   }
 
   .text1 {
@@ -442,7 +442,7 @@ footer .footer-copyright {
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .bg-principal {
     background-attachment: fixed;
-    background-image: url(../img/fondo2.jpg);
+    background-image: url(/img/fondo2.jpg);
   }
 
   .text1 {
@@ -525,7 +525,7 @@ footer .footer-copyright {
 /*Desktop Styles*/
 @media only screen and (min-width: 961px) {
   .bg-principal {
-    background-image: url(../img/fondo2.jpg);
+    background-image: url(/img/fondo2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
