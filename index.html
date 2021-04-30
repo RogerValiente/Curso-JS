@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nuestros postres son un arte hecho a mano, 
+  para degustar y sorprende a esa persona que tanto quieres.">
+  <meta name="keywords"
+    content="Recetas de postres, cupcakes, brownie, pie, macarrons, tematicos, crema, pedidos especiales">
+  <meta name="author" content="Roger Meza, mezaroger1@gmail.com">
+  <title>Oliva Bakery | Pastelería y Repostería</title>
+  <link rel="icon" href="img/logo.png">
+  <!-- link de css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- link de css bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- link iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-principal">
+  <!--Menu-->
+  <div id="main-menu">
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="logo" href="index.html"><img src="img/logo.png" alt="Oliva Postres"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Productos</a>
+              <div class="color-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item " href="#postres">Postres</a>
+                <a class="dropdown-item" href="#pasteleria">Pastelería</a>
+                <a class="dropdown-item" href="#detalles">Detalles</a>
+
+              </div>dsd
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contáctenos</a>
+            </li>
+
+            <!-- Carrito de compra -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown submenu">
+                  <img src="img/cart.png"></img>
+                </li>
+              </ul>
+            </div>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" id="formulario" action="">
+            <input class="form-control mr-sm-2" id="buscador" type="text" placeholder="Buscar producto"
+              aria-label="Search">
+            <button id="submit-buscador" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Fin Menu-->
+
+  <header id="inicio">
+    <div class="container">
+      <div class="text1">
+        <h1 class="w3-animate-top">Oliva Bakery</h1>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="title-styc">
+    <div data-aos="fade-right" data-aos-duration=" 3000 " data-aos-easing="ease-in-sine">
+      <h2>NUESTROS PRODUCTOS</h2>
+    </div>
+  </main>
+  <section>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+          <div class="card box-productos">
+            <a href="#postres"><img src="img/postre.jpg" alt="Oliva Postres"></a>
+            <h3 class="button"><a href="#postres">Postres</a></h3>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card box-productos">
+            <a href="#pasteleria"><img src="img/pasteleria.jpg" alt="Oliva Pastelería"></a>
+            <h3 class="button"><a href="#pasteleria">Pastelería</a></h3>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card box-productos">
+            <a href="#detalles"><img src="img/detalle.jpg" alt="Oliva Detalles"></a>
+            <h3 class="button"><a href="#detalles">Detalles</a></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Cuerpo de la pagina-->
+  <section id="postres">
+         <h2>POSTRES</h2>  
+  </section>
+
+  <!--Inicio del contenedor-->
+  <section class="container">
+    <div id="lista-productos">
+
+      <div id="listaPostres" class="boxes-section w3-container-fluid w3-justify w3-animate-right">
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="img/pos-img/01.jpg" alt="Cupcakes decorados">
+            <h3 class="card-title">Cupcakes con Crema</h3>
+            <p class="card-text">De mani & chocolate.</p>
+            <p class="precio font-weight-bold">$10000</p>
+            <button type="button" class="btn btn-primary" onclick="alert('Se agregro al carrito')" data-id="1">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="img/pos-img/02.jpg" alt="Cupcakes para fiestas y reuniones">
+            <h3 class="card-title">Cupcakes Temáticos</h3>
+            <p class="card-text">Especial para cada ocasión.</p>
+            <p class="precio font-weight-bold">$5000</p>
+            <button type="button" class="btn btn-primary" onclick="alert('Se agregro al carrito')" data-id="2">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="img/pos-img/03.jpg" alt="Pastel de chocolate">
+            <h3 class="card-title">Brownie</h3>
+            <p class="card-text">Galleta & chocolate.</p>
+            <p class="precio font-weight-bold">$20000</p>
+            <button type="button" class="btn btn-primary" onclick="alert('Se agregro al carrito')" data-id="3">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="./img/pos-img/04.jpg" alt="Cupcakes con figuras en fondant">
+            <h3 class="card-title">Cupcakes & Fondant</h3>
+            <p class="card-text">Especial para cada ocasión.</p>
+            <p class="precio font-weight-bold">$25000</p>
+            <button type="button" class="btn btn-primary"  onclick="alert('Se agregro al carrito')" data-id="4">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="./img/pos-img/05.jpg" alt="Galleta tradicional rellena">
+            <h3 class="card-title">Macarrons</h3>
+            <p class="card-text">Variedades de rellenos.</p>
+            <p class="precio font-weight-bold">$12000</p>
+            <button type="button" class="btn btn-primary" onclick="alert('Se agregro al carrito')" data-id="5">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="./img/pos-img/06.jpg" alt="Cupcakes decorados a tus gustos">
+            <h3 class="card-title">Cupcakes Temáticos</h3>
+            <p class="card-text">Para tus eventos.</p>
+            <p class="precio font-weight-bold">$17000</p>
+            <button type="button" class="btn btn-primary"onclick="alert('Se agregro al carrito')" data-id="6">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="./img/pos-img/07.jpg" alt="Cupcakes para sorprender">
+            <h3 class="card-title">Cupcakes Decorados</h3>
+            <p class="card-text">Sabor vainilla.</p>
+            <p class="precio font-weight-bold">$30000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="7">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="./img/pos-img/08.jpg" alt="Pie para deleitar tu paladar">
+            <h3 class="card-title">Merengue</h3>
+            <p class="card-text">Frutos rojos.</p>
+            <p class="precio font-weight-bold">$15000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="8">Agregar al
+              carrito</button>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <img src="./img/pos-img/09.jpg" alt="Pie para deleitar tu paladar">
+            <h3 class="card-title">Pie</h3>
+            <p class="card-text">Frutos rojos.</p>
+            <p class="precio font-weight-bold">$35000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="9">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seccion pasteleria -->
+
+      <div id="pasteleria" class="w3-container-fluid w3-center w3-animate-right">
+        <h2>PASTELERIA</h2>
+      </div>
+
+      <!-- Seccion Pasteleria -->
+      <div class="boxes-section w3-container-fluid w3-justify w3-animate-left">
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/01.jpg" alt="Tortas hechas con amor"></a>
+            <h3 class="card-title">Torta de la Casa</h3>
+            <p class="card-text">Una delicia de la casa con sabor a limón, decoración con frutas y chocolate.
+            </p>
+            <p class="precio font-weight-bold">$45000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="10">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/02.jpg" alt="Torta con frutas deshidratadas"></a>
+            <h3 class="card-title">Torta Deshidratada</h3>
+            <p class="card-text">Torta rellena de arequipe, masa sabor vainilla, decoración con peras.
+            </p>
+            <p class="precio font-weight-bold">$50000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="11">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/03.jpg" alt="Torta con diseños únicos"></a>
+            <h3 class="card-title">Tortas Temáticas</h3>
+            <p class="card-text">Torta rellena de limón o arequipe y tu eliges la decoración que más te
+              guste.</p>
+            <p class="precio font-weight-bold">$60000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="12">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/04.jpg" alt="Torta de chocolate y frutos rojos"></a>
+            <h3 class="card-title">Torta Frutos Salvajes</h3>
+            <p class="card-text">Torta rellena con frutos rojos, crema de sabores y bizcocho de chocolate.</p>
+            <p class="precio font-weight-bold">$55000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="13">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/05.jpg" alt="Pavlova clásica y deliciosa"></a>
+            <h3 class="card-title">Pavlova</h3>
+            <p class="card-text">Delcioso postre elaborado con merengue y frutos rojos.</p>
+            <p class="precio font-weight-bold">$15000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="14">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/06.jpg" alt="Merengue o suspiro"></a>
+            <h3 class="card-title">Merengue</h3>
+            <p class="card-text">Un delicioso merengue con las frutas que tu elijas.</p>
+            <p class="precio font-weight-bold">$25000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="15">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/07.jpg" alt="Postre a base de plantillas"></a>
+            <h3 class="card-title">Torta Charlotte</h3>
+            <p class="card-text">Torta fría con frutos rojos para deleitar tu paladar.</p>
+            <p class="precio font-weight-bold">$65000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="16">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/08.jpg" alt="Pastel tropical colombiano"></a>
+            <h3 class="card-title">Torta Tropical</h3>
+            <p class="card-text">Torta sabor a vainilla, frutos tropicales y chocolate.</p>
+            <p class="precio font-weight-bold">$70000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="17">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem;">
+          <div class="card-body">
+            <a href="#"><img src="img/past-img/09.jpg" alt="Pastel tropical colombiano"></a>
+            <h3 class="card-title">Pie Manzana</h3>
+            <p class="card-text">Pie de manzana, para compartir en familia.</p>
+            <p class="precio font-weight-bold">$35000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="18">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Secion Detalles -->
+
+      <div id="detalles" class="w3-container-fluid w3-center w3-animate-right">
+        <h2>DETALLES</h2>
+      </div>
+
+      <div class="boxes-section w3-container-fluid w3-justify w3-animate-left">
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="img/det-img/01.jpg" alt="Budín o pudin casero">
+            <h3 class="card-title">Budín</h3>
+            <p class="card-text">Un delicioso budin.</p>
+            <p class="precio font-weight-bold">$25000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="19">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="img/det-img/02.jpg" alt="Galletas con formas de corazones">
+            <h3 class="card-title">Galletas Polvorosas</h3>
+            <p class="card-text">Especial para cada ocasión.</p>
+            <p class="precio font-weight-bold">$35000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="20">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="img/det-img/03.jpg" alt="Decoración de galletas">
+            <h3 class="card-title">Galletas Temáticas</h3>
+            <p class="card-text">Se adaptan para tus eventos.</p>
+            <p class="precio font-weight-bold">$40000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="21">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="img/det-img/04.jpg" alt="Decoración de frutas con chocolate">
+            <h3 class="card-title">Detalles para Ellos</h3>
+            <p class="card-text">Especial para cada ocasión.</p>
+            <p class="precio font-weight-bold">$15000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="22">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="./img/det-img/05.jpg" alt="Pastel especial">
+            <h3 class="card-title">Torta Temática</h3>
+            <p class="card-text">Para que sorprendas a tu personita especial.</p>
+            <p class="precio font-weight-bold">$55000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="23">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="./img/det-img/06.jpg" alt="Arreglos de frutas y postres">
+            <h3 class="card-title">Detalles Saludables</h3>
+            <p class="card-text">Para que compartas con tu personita especial.</p>
+            <p class="precio font-weight-bold">$80000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="24">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="./img/det-img/07.jpg" alt="Sorpresa con oso de peluche">
+            <h3 class="card-title">Detalles para Ellas</h3>
+            <p class="card-text">Especial para cada ocasión y momento especial.</p>
+            <p class="precio font-weight-bold">$90000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="25">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="./img/det-img/08.jpg" alt="Cupcakes para obsequiar">
+            <h3 class="card-title">Cupcakes Temáticos</h3>
+            <p class="card-text">En diferentes modelos para tus eventos.</p>
+            <p class="precio font-weight-bold">$17000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="26">Agregar al
+              carrito</button>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem; margin-bottom: 1rem">
+          <div class="card-body">
+            <img src="./img/det-img/09.jpg" alt="Cupcakes para obsequiar">
+            <h3 class="card-title">Cupcakes Para Ellos</h3>
+            <p class="card-text">En diferentes modelos para tus fiestas.</p>
+            <p class="precio font-weight-bold">$30000</p>
+            <button class="btn btn-primary agregaralcarrito" data-id="27">Agregar al
+              carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Fin del contenedor-->
+
+
+  <!--Redes Sociales-->
+  <section>
+    <div class="red-social">
+      <ul>
+        <li> <a href="https://www.facebook.com" class="fab fa-facebook-f" target="_blank"></a></li>
+        <li> <a href="https://www.twitter.com" class="fab fa-twitter" target="_blank"></a></li>
+        <li> <a href="https://www.instagram.com/olivabakery_/" class="fab fa-instagram" target="_blank"></a>
+        </li>
+        <li> <a href="https://es-la.facebook.com/messenger/" target="_blank" class="fab fa-facebook-messenger"></a></li>
+        <li> <a href="https://api.whatsapp.com/send?phone=573163363957&text=Hola,%20me%20gustaria%20hacer%20un%20pedido"
+            target="_blank" class="fab fa-whatsapp" target="_blank"></a></li>
+        <li> <a href="https://www.youtube.com" class="fab fa-youtube-square" target="_blank"></a></li>
+      </ul>
+    </div>
+  </section>
+  <!--Fin Redes Sociales-->
+
+  <!-- Inicio footer Desktop-->
+  <footer class="footer-bg d-none d-sm-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <h4 class="text-white">Productos</h4>
+          <a class="footer-a" href="#">Postres</a>
+          <a class="footer-a" href="#">Pastelería</a>
+          <a class="footer-a" href="#">Detalles</a>
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column align-items-center">
+          <address>
+            <h4>Tienda Central</h4>
+            <p><i class="fas fa-home footer-icon"></i>Bogotá - Colombia</p>
+            <p><i class="fas fa-phone-square-alt footer-icon"></i>+57-310-5000000</p>
+            <p><i class="fas fa-envelope footer-icon"></i>contacto@olivabakery.com</p>
+          </address>
+        </div>
+
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+          <h4 class="text-white">Información</h4>
+          <a class="footer-a" href="nosotros.html">Nosotros</a>
+          <a class="footer-a" href="contactenos.html">Contáctanos</a>
+          <a class="footer-a" href="#">Políticas de Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white">© 2020 Copyright:
+      <a href="#">Página creada por Roger Meza | Todos los derechos reservados</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Fin footer Desktop -->
+
+  <!--Inicio Footer smartphone-->
+  <footer class="footer-red d-block d-sm-block d-md-none pt-2">
+    <!-- Footer Elements -->
+    <div class="container">
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1" href="https://www.facebook.com" target="_blank">
+            <i class="fab fa-facebook-f">
+            </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1" href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter">
+            </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-gplus mx-1" href="https://www.instagram.com/olivabakery_/" target="_blank">
+            <i class="fab fa-instagram">
+            </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-li mx-1"
+            href="https://api.whatsapp.com/send?phone=573163363957&text=Hola,%20me%20gustaria%20hacer%20un%20pedido"
+            target="_blank" target="_blank">
+            <i class="fab fa-whatsapp">
+            </i>
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#">Página creada por Roger Meza</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Fin Footer smartphone-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js'>
+  </script>
+   <script src="app.js"></script>
+
+</body>
+</html>

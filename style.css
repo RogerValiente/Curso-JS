@@ -1,0 +1,556 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.logo,
+img {
+  width: 60px;
+  height: 50px;
+  padding-right: 10px;
+}
+
+/* ________________________________________ */
+
+#title-styc {
+  position: sticky;
+  background-color: rgba(61, 77, 70, 0.7);
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #cccccc;
+  display: flex;
+  justify-content: center;
+}
+
+#pasteleria,
+#postres,
+#detalles {
+  position: sticky;
+  top: 60px;
+  z-index: 20;
+  background-color: rgba(61, 77, 70, 0.7);
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #cccccc;
+  display: flex;
+  justify-content: center;
+}
+
+#pasteleria h2,
+#postres h2,
+#title-styc h2,
+#detalles h2 {
+  background-color: rgba(61, 77, 70, 0.7);
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #cccccc;
+  text-shadow: -5px -5px 5px black;
+  color: #eff2f3;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.box-product,
+.box-productos {
+  width: 100%;
+  height: auto;
+  flex: 1 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 5px #eff2f3;
+}
+
+.box-productos img .box-product img {
+  width: 100%;
+  height: 350px;
+  transition: all 350ms;
+}
+.box-product img {
+  width: 100%;
+  height: 350px;
+  transition: all 350ms;
+}
+
+.red-social .fab {
+  width: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/*Secciones*/
+.boxes-section {
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding: 40px;
+}
+
+.boxes-section img {
+  width: 100%;
+  height: 200px;
+}
+
+.boxes-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.boxes-section img {
+  transition: all 350ms;
+  border-radius: 5px;
+  box-shadow: 1px 0px 13px black;
+  margin-bottom: 5px;
+}
+
+.boxes-section img:hover {
+  transform: scale(1.1);
+  transition: all 350ms;
+}
+
+/* Seccion Nosotros*/
+.section-nosotros {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-nosotros img {
+  box-shadow: 1px 0px 13px black;
+  width: 100%;
+  height: 15rem;
+}
+
+/* Seccion Contactos*/
+.form-contacto {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-maps {
+  margin-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner principal*/
+header .text1 {
+  letter-spacing: 4px;
+  position: relative;
+  top: 0;
+  animation: text 3s 1;
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  height: 80px;
+  margin-top: 0;
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+header .carousel-borde {
+  background-color: #3d4d46;
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #cccccc;
+  box-shadow: 0px 1px 10px #eff2f3;
+}
+
+header .carousel-logo {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Menu */
+#main-menu {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+#main-menu .bg-menu {
+  background-color: #3d4d46;
+}
+
+#main-menu .color-menu {
+  background-color: #3d4d46;
+}
+
+#main-menu .color-menu a {
+  color: #eff2f3;
+  border-bottom: solid 1px #ffebcb;
+}
+
+#main-menu .color-menu a:hover {
+  background: #5b78a7;
+  transition: all 350ms;
+  width: 100%;
+  height: auto;
+}
+
+#main-menu a {
+  font-weight: bold;
+}
+
+/*Cajas Productor*/
+.box-product,
+.box-productos {
+  box-shadow: 5px -5px 5px black;
+}
+
+.box-product img:hover,
+.box-productos img:hover {
+  box-shadow: 5px 5px 20px black;
+  transform: translateY(-6%);
+  transition: all 350ms;
+}
+
+.box-product h3:hover,
+.box-productos h3:hover {
+  transform: scale(1.1);
+  transition: all 350ms;
+}
+
+.box-product h3 a,
+.box-productos h3 a {
+  color: #cfb07b;
+  transition: all 350ms;
+}
+
+.box-product .button,
+.box-productos .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #3d4d46;
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #cccccc;
+}
+
+.box-product .button a,
+.box-productos .button a {
+  color: #eff2f3;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.box-product .button a:hover,
+.box-productos .button a:hover {
+  color: #cfb07b;
+  transition: all 350ms;
+}
+
+/*Redes Sociales*/
+.red-social {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  z-index: 100;
+}
+
+.red-social a {
+  display: inline-block;
+  padding: 10px 15px;
+  transition: 0.1s ease;
+  color: #eff2f3;
+}
+
+.red-social a:hover {
+  color: white;
+  padding: 10px 40px;
+}
+
+.red-social .fa-facebook-f {
+  background: #3b5998;
+}
+
+.red-social .fa-twitter {
+  background: #00abf0;
+}
+
+.red-social .fa-instagram {
+  background: #3f729b;
+}
+
+.red-social .fa-facebook-messenger {
+  background: #0084ff;
+}
+
+.red-social .fa-whatsapp {
+  background: #4ac959;
+}
+
+.red-social .fa-youtube-square {
+  background: #c4302b;
+}
+
+.boton-volver {
+  position: fixed;
+  right: 0;
+  top: 70%;
+  z-index: 100;
+}
+
+/*Pie de pagina*/
+footer {
+  background-color: rgba(61, 77, 70, 0.7);
+  border-top: 2px solid #cccccc;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  color: #eff2f3;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  transition: all 350ms;
+  color: #eff2f3;
+}
+
+footer address {
+  color: #eff2f3;
+}
+
+footer address p {
+  height: 10px;
+}
+
+footer address .footer-icon {
+  padding-right: 5px;
+}
+
+footer .footer-copyright {
+  background-color: #3d4d46;
+}
+
+/*Medias Query mobiles*/
+@media only screen and (max-width: 480px) {
+  .bg-principal {
+    background-attachment: fixed;
+    background-image: url(../img/fondo1.jpg);
+  }
+
+  .text1 {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+  }
+
+  .text1 h1 {
+    font-size: 1.5rem;
+    color: #eff2f3;
+    font-weight: 800;
+    text-shadow: -5px -5px 5px black;
+    margin-top: 5px;
+  }
+
+  #title-styc h2 {
+    font-size: 2rem;
+  }
+
+  .box-productos img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box-product img {
+    width: 100%;
+    height: auto;
+  }
+
+  #postres,
+  #pasteleria,
+  #detalles {
+    height: 2.5rem;
+  }
+
+  #postres h2,
+  #pasteleria h2,
+  #detalles h2 {
+    font-size: 2rem;
+  }
+
+  .red-social a {
+    display: none;
+  }
+
+  footer .fa-facebook-f {
+    background: #3b5998;
+  }
+
+  footer .fa-twitter {
+    background: #00abf0;
+  }
+
+  footer .fa-instagram {
+    background: #3f729b;
+  }
+
+  footer .fa-whatsapp {
+    background: #4ac959;
+  }
+
+  footer .fab {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 80%;
+  }
+
+  footer .fa-facebook-f:before,
+  footer .fa-twitter:before,
+  footer .fa-whatsapp:before,
+  footer .fa-instagram:before {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+  }
+
+  footer .list-inline {
+    margin-bottom: 5px;
+  }
+
+  footer .footer-copyright a {
+    font-size: 80%;
+  }
+}
+
+/*Medias Query Tablets */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .bg-principal {
+    background-attachment: fixed;
+    background-image: url(../img/fondo2.jpg);
+  }
+
+  .text1 {
+    width: 100%;
+    height: 70px;
+  }
+
+  .text1 h1 {
+    font-size: 3rem;
+    color: #eff2f3;
+    font-weight: 800;
+    text-shadow: -5px -5px 5px black;
+    margin-top: 5px;
+  }
+
+  .box-productos img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .box-product img {
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title {
+    height: 2.5rem;
+  }
+
+  .section-title h1 {
+    font-size: 2rem;
+  }
+
+  .red-social a {
+    display: none;
+  }
+
+  footer .fa-facebook-f {
+    background: #3b5998;
+  }
+
+  footer .fa-twitter {
+    background: #00abf0;
+  }
+
+  footer .fa-instagram {
+    background: #3f729b;
+  }
+
+  footer .fa-whatsapp {
+    background: #4ac959;
+  }
+
+  footer .fab {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 80%;
+  }
+
+  footer .fa-facebook-f:before,
+  footer .fa-twitter:before,
+  footer .fa-whatsapp:before,
+  footer .fa-instagram:before {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+  }
+
+  footer .list-inline {
+    margin-bottom: 5px;
+  }
+
+  footer .footer-copyright a {
+    font-size: 100%;
+  }
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 961px) {
+  .bg-principal {
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .text1 {
+    width: 100%;
+    height: 120px;
+  }
+
+  .text1 h1 {
+    font-size: 5rem;
+    color: #eff2f3;
+    font-weight: 800;
+    text-shadow: -5px -5px 5px black;
+    margin-top: 5px;
+  }
+
+  .box-productos img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .box-product img {
+    width: 100%;
+    height: 300px;
+  }
+}
