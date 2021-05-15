@@ -4,6 +4,34 @@
   border: 0;
 }
 
+.carrito svg#carrito {
+  width: 4rem;
+  fill: white;
+}
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+.submenu:hover #carrito {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 200px;
+  min-width: 600px;
+}
+
 .logo,
 img {
   width: 60px;
