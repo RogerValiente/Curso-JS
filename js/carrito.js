@@ -19,14 +19,10 @@ const actualizarContador = () => {
   //variable para obtener los datos de localStorage
   let todosLosProds = window.localStorage.getItem("carrito");
   todosLosProds = JSON.parse(todosLosProds);
-  //Mostrar la cantidad de productos seleciona al lado de la imagen del carrito
+  //Mostrar la cantidad de productos selecionada al lado de la imagen del carrito
   document.querySelector("#cantidad").innerHTML = todosLosProds
     ? todosLosProds.length
     : 0;
 };
 
 actualizarContador();
-
-let DatosLocal = localStorage.getItem("carrito");
-DatosLocal = window.JSON.parse(DatosLocal);
-console.log(DatosLocal);

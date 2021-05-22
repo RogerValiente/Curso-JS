@@ -55,9 +55,9 @@ img {
 #pasteleria,
 #postres,
 #detalles {
-  /* position: sticky;
+  position: sticky;
   top: 60px;
-  z-index: 20; */
+  z-index: 20;
   background-color: rgba(61, 77, 70, 0.7);
   border-top: 2px solid #cccccc;
   border-right: 2px solid #333333;
