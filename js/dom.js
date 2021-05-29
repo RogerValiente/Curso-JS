@@ -38,14 +38,17 @@ window.onload = function () {
 
 //Funcion para crear las cards para todos los productos
 function crearCard(data) {
+  /* Destrucuring */
+  const { titulo, img, descripcion, precio, id } = data;
+
   return `
     <div class="card" style="width: 18rem; margin-bottom: 1rem;">
     <div class="card-body">
-    <a href="#"><img src=${data.img} alt="Merengue o suspiro"></a>
-    <h3 class="card-title">${data.titulo}</h3>
-    <p class="card-text">${data.descripcion}</p>
-    <h4 class="card-text font-weight-bold">Precio $ ${data.precio}</h4>
-    <button class="btn btn-primary" onclick='agregarProductoCarrito({nombre:"${data.titulo}"})'>Agregar al
+    <a href="#"><img src=${img} alt="Merengue o suspiro"></a>
+    <h3 class="card-title">${titulo}</h3>
+    <p class="card-text">${descripcion}</p>
+    <h4 class="card-text font-weight-bold">Precio $ ${precio}</h4>
+    <button class="btn btn-primary" onclick='agregarProductoCarrito({imagen:"${img}", id: "${id}", nombre: "${titulo}", precio:"${precio}"})'>Agregar al
     carrito</button>
     </div>
     </div>`;

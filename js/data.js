@@ -5,7 +5,7 @@ let data = {
       titulo: "Cupcakes con Crema",
       descripcion: "De mani & chocolate.",
       img: "img/pos-img/01.jpg",
-      precio: 15000,
+      precio: 10000,
     },
 
     {
@@ -13,7 +13,7 @@ let data = {
       titulo: "Cupcakes Temáticos",
       descripcion: "Especial para cada ocasión.",
       img: "img/pos-img/02.jpg",
-      precio: 15000,
+      precio: 12000,
     },
 
     {
@@ -29,7 +29,7 @@ let data = {
       titulo: "Cupcakes & Fondant",
       descripcion: "Especial para cada ocasión.",
       img: "img/pos-img/04.jpg",
-      precio: 15000,
+      precio: 14000,
     },
 
     {
@@ -37,7 +37,7 @@ let data = {
       titulo: "Macarrons",
       descripcion: "Variedades de rellenos.",
       img: "img/pos-img/05.jpg",
-      precio: 15000,
+      precio: 10000,
     },
 
     {
@@ -45,7 +45,7 @@ let data = {
       titulo: "Cupcakes Temáticos",
       descripcion: "Para tus eventos.",
       img: "img/pos-img/06.jpg",
-      precio: 15000,
+      precio: 13000,
     },
 
     {
@@ -61,7 +61,7 @@ let data = {
       titulo: "Pie",
       descripcion: "Frutos rojos.",
       img: "img/pos-img/08.jpg",
-      precio: 15000,
+      precio: 11000,
     },
   ],
 

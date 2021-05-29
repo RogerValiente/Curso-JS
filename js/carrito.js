@@ -23,6 +23,7 @@ const actualizarContador = () => {
   document.querySelector("#cantidad").innerHTML = todosLosProds
     ? todosLosProds.length
     : 0;
+  mostrarProductos();
 };
 
 actualizarContador();
