@@ -139,6 +139,15 @@ img {
   transition: all 350ms;
 }
 
+.boton-volver {
+  position: fixed;
+  right: 0;
+  padding: 0.3rem 1rem;
+  top: 70%;
+  z-index: 100;
+  cursor: pointer;
+}
+
 /* Seccion Nosotros*/
 .section-nosotros {
   margin-top: 30px;
@@ -328,13 +337,6 @@ header .carousel-logo {
   background: #c4302b;
 }
 
-.boton-volver {
-  position: fixed;
-  right: 0;
-  top: 70%;
-  z-index: 100;
-}
-
 /*Pie de pagina*/
 footer {
   background-color: rgba(61, 77, 70, 0.7);
@@ -464,6 +466,12 @@ footer .footer-copyright {
   footer .footer-copyright a {
     font-size: 80%;
   }
+  .boton-volver {
+    position: fixed;
+    right: -24px;
+    top: 70%;
+    z-index: 100;
+  }
 }
 
 /*Medias Query Tablets */
@@ -548,6 +556,13 @@ footer .footer-copyright {
   footer .footer-copyright a {
     font-size: 100%;
   }
+
+  .boton-volver {
+    position: fixed;
+    right: -15px;
+    top: 70%;
+    z-index: 100;
+  }
 }
 
 /*Desktop Styles*/
@@ -580,5 +595,17 @@ footer .footer-copyright {
   .box-product img {
     width: 100%;
     height: 300px;
+  }
+
+  .boton-volver {
+    position: fixed;
+    right: 0px;
+    top: 70%;
+    z-index: 100;
+  }
+
+  .boton-volver img {
+    width: 80%;
+    height: auto;
   }
 }
