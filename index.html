@@ -63,18 +63,18 @@
                     <table id="lista-carrito" class="table">
                       <thead>
                         <tr>
-                          <th>Id</th>
+                          <!-- <th>Id</th> -->
                           <th>Imagen</th>
                           <th>Nombre</th>
                           <th>Precio</th>
-                          <!-- <th>Cantidad</th>
-                        <th>Total</th> -->
+                          <th>Cantidad</th> 
+                          <th>Sub Total</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody id="tablafinalcompras"></tbody>
                     </table>
-                    <a href="#" id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</a>
+                    <a href="#" id="vaciar-carrito" class="btn btn-primary" onclick="vaciarCarrito()">Vaciar Carrito</a>
                     <a href="#" id="procesar-pedido" class="btn btn-danger">Procesar
                       Compra</a>
                   </div>
@@ -104,7 +104,7 @@
 
   <main id="title-styc">
     <div data-aos="fade-right" data-aos-duration=" 3000 " data-aos-easing="ease-in-sine">
-      <h2 id="catalogo">NUESTROS PRODUCTOS</h2>
+      <h2>NUESTROS PRODUCTOS</h2>
     </div>
   </main>
   <section>
@@ -132,6 +132,12 @@
         </div>
       </div>
     </div>
+    <div>
+      <a href="#respuesta">
+        <h3 id="catalogo" onclick="obtenerDatos()">VER TODO LOS PRODUCTOS</h3>
+      </a>
+      <br>
+        </div>
   </section>
 
 
@@ -160,10 +166,19 @@
       </div>
       <div id="detallesCard" class="boxes-section">
       </div>
+      
+      <!-- Seccion mostrar todos los productos -->
+      <div id="pasteleria" class="w3-container-fluid w3-center w3-animate-right">
+        <button class="btn btn-floating volver-catalogo">
+          <h2>TODOS LOS PRODUCTOS</h2>
+        </button>
+      </div>
+      
+      <div id="respuesta" class="boxes-section w3-container-fluid w3-justify w3-animate-right">
+      </div>
     </div>
   </section>
   <!--Fin del contenedor-->
-
 
   <!--Redes Sociales-->
   <section>
@@ -262,7 +277,7 @@
     <!-- Footer Elements -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
       <a href="#">Página creada por Roger Meza</a>
     </div>
     <!-- Copyright -->
@@ -283,11 +298,14 @@
   <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js'>
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
-  <script src="js/data.js"></script>
+  <script src="js/api.json"></script>
   <script src="js/dom.js"></script>
+  <script src="js/ajax.js"></script>
   <script src="js/carrito.js"></script>
-  <script src="js/verCarrito.js"></script>
+  <script src="js/productosCarrito.js"></script>
+
 
 </body>
 

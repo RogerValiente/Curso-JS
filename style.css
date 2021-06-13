@@ -39,6 +39,28 @@ img {
   padding-right: 10px;
 }
 
+#catalogo {
+  color: #eff2f3;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #cccccc;
+  border-right: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  border-left: 2px solid #cccccc;
+  box-shadow: 0px 1px 10px #c4ee0b;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: -5px -5px 5px black;
+  text-align: center;
+}
+
+#catalogo:hover {
+  color: #cfb07b;
+  transition: all 350ms;
+  transform: scale(1.1);
+  transition: all 350ms;
+}
+
 /* ________________________________________ */
 
 #title-styc {
@@ -125,6 +147,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 80px;
 }
 
 .boxes-section img {

@@ -1,0 +1,241 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cupcakes con Crema",
+    "descripcion": "De mani & chocolate.",
+    "imagen": "img/pos-img/01.jpg",
+    "precio": 10000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 2,
+    "nombre": "Cupcakes Temáticos",
+    "descripcion": "Especial para cada ocasión.",
+    "imagen": "img/pos-img/02.jpg",
+    "precio": 5000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 3,
+    "nombre": "Brownie",
+    "descripcion": "Galleta & chocolate.",
+    "imagen": "img/pos-img/03.jpg",
+    "precio": 20000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 4,
+    "nombre": "Cupcakes & Fondant",
+    "descripcion": "Especial para cada ocasión.",
+    "imagen": "img/pos-img/04.jpg",
+    "precio": 25000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 5,
+    "nombre": "Macarrons",
+    "descripcion": "Variedades de rellenos.",
+    "imagen": "img/pos-img/05.jpg",
+    "precio": 12000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 6,
+    "nombre": "Cupcakes Temáticos",
+    "descripcion": "Para tus eventos.",
+    "imagen": "img/pos-img/06.jpg",
+    "precio": 17000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 7,
+    "nombre": "Cupcakes Decorados",
+    "descripcion": "Sabor vainilla.",
+    "imagen": "img/pos-img/07.jpg",
+    "precio": 30000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 8,
+    "nombre": "Merengue",
+    "descripcion": "Frutos rojos.",
+    "imagen": "img/pos-img/08.jpg",
+    "precio": 15000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 9,
+    "nombre": "Pie",
+    "descripcion": "Frutos rojos.",
+    "imagen": "img/pos-img/08.jpg",
+    "precio": 35000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 10,
+    "nombre": "Torta de la Casa",
+    "descripcion": "Una delicia de la casa con sabor a limón, decoración con frutas y chocolate.",
+    "imagen": "img/past-img/01.jpg",
+    "precio": 45000,
+    "cantidad": 1
+  },
+  {
+    "id": 11,
+    "nombre": "Torta Deshidratada",
+    "descripcion": "Torta rellena de arequipe, masa sabor vainilla, decoración con peras.",
+    "imagen": "img/past-img/02.jpg",
+    "precio": 50000,
+    "cantidad": 1
+  },
+  {
+    "id": 12,
+    "nombre": "Tortas Temáticas",
+    "descripcion": "Torta rellena de limón o arequipe y tu eliges la decoración que más te guste.",
+    "imagen": "img/past-img/03.jpg",
+    "precio": 60000,
+    "cantidad": 1
+  },
+  {
+    "id": 13,
+    "nombre": "Torta Frutos Salvajes",
+    "descripcion": "Torta rellena con frutos rojos, crema de sabores y bizcocho de chocolate.",
+    "imagen": "img/past-img/04.jpg",
+    "precio": 55000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 14,
+    "nombre": "Pavlova",
+    "descripcion": "Delcioso postre elaborado con merengue y frutos rojos.",
+    "imagen": "img/past-img/05.jpg",
+    "precio": 15000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 15,
+    "nombre": "Merengue",
+    "descripcion": "Un delicioso merengue con las frutas que tu elijas.",
+    "imagen": "img/past-img/06.jpg",
+    "precio": 25000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 16,
+    "nombre": "Torta Charlotte",
+    "descripcion": "Torta fría con frutos rojos para deleitar tu paladar.",
+    "imagen": "img/past-img/07.jpg",
+    "precio": 65000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 17,
+    "nombre": "Torta Tropical",
+    "descripcion": "Torta sabor a vainilla, frutos tropicales y chocolate.",
+    "imagen": "img/past-img/08.jpg",
+    "precio": 70000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 18,
+    "nombre": "Pie Manzana",
+    "descripcion": "Torta sabor a vainilla, frutos tropicales y chocolate.",
+    "imagen": "img/past-img/09.jpg",
+    "precio": 35000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 19,
+    "nombre": "Budín",
+    "descripcion": "Un delicioso budin.",
+    "imagen": "img/det-img/01.jpg",
+    "precio": 25000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 20,
+    "nombre": "Galletas Polvorosas",
+    "descripcion": "Especial para cada ocasión.",
+    "imagen": "img/det-img/02.jpg",
+    "precio": 35000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 21,
+    "nombre": "Galletas Temáticas",
+    "descripcion": "Se adaptan para tus eventos.",
+    "imagen": "img/det-img/03.jpg",
+    "precio": 40000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 22,
+    "nombre": "Detalles para Ellos",
+    "descripcion": "Especial para cada ocasión.",
+    "imagen": "img/det-img/04.jpg",
+    "precio": 15000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 23,
+    "nombre": "Torta Temática",
+    "descripcion": "Para que sorprendas a tu personita especial.",
+    "imagen": "img/det-img/05.jpg",
+    "precio": 55000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 24,
+    "nombre": "Detalles Saludables",
+    "descripcion": "Para que compartas con tu personita especial.",
+    "imagen": "img/det-img/06.jpg",
+    "precio": 80000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 25,
+    "nombre": "Detalles para Ellas",
+    "descripcion": "Especial para cada ocasión y momento especial.",
+    "imagen": "img/det-img/07.jpg",
+    "precio": 90000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 26,
+    "nombre": "Cupcakes Temáticos",
+    "descripcion": "En diferentes modelos para tus eventos.",
+    "imagen": "img/det-img/08.jpg",
+    "precio": 17000,
+    "cantidad": 1
+  },
+
+  {
+    "id": 27,
+    "nombre": "Cupcakes Temáticos",
+    "descripcion": "En diferentes modelos para tus eventos.",
+    "imagen": "img/det-img/09.jpg",
+    "precio": 30000,
+    "cantidad": 1
+  }
+]

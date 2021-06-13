@@ -1,12 +1,13 @@
 //Variable que alamacena los productos agregados en la array
 let articulosCarrito = [];
 
-//Funcion para agregar productos al carrito con onclick
+//Evento para añadir un producto al carrito de compra
 const agregarProductoCarrito = (e) => {
   articulosCarrito.push(e);
   alert("Se agrego producto al carrito");
   guardarEnLocalStotage();
   actualizarContador();
+  generarTablaCompras();
 };
 
 //Funcion para guardar la informacion en localStorage
@@ -23,7 +24,6 @@ const actualizarContador = () => {
   document.querySelector("#cantidad").innerHTML = todosLosProds
     ? todosLosProds.length
     : 0;
-  mostrarProductos();
 };
 
 actualizarContador();
