@@ -16,7 +16,7 @@
   <!-- link de css bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- link iconos -->
+    <!-- link iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -46,6 +46,9 @@
                 <a class="dropdown-item" href="#detalles">Detalles</a>
 
               </div>
+              <li class="nav-item">
+                <a class="nav-link" href="compra.html">Comprar</a>
+              </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Nosotros</a>
             </li>
@@ -60,6 +63,9 @@
                   <img src="img/cart.png"></img>
                   <span id="cantidad" class="text-white"></span>
                   <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                    <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                    <button class="btn btn-danger procesar-compra" onclick="rederigirCheckout()">Procesar
+                      Compra</button>
                     <table id="lista-carrito" class="table">
                       <thead>
                         <tr>
@@ -74,10 +80,7 @@
                       </thead>
                       <tbody id="tablafinalcompras"></tbody>
                     </table>
-                    <a href="#" id="vaciar-carrito" class="btn btn-primary" onclick="vaciarCarrito()">Vaciar Carrito</a>
-                    <a href="#" id="procesar-pedido" class="btn btn-danger">Procesar
-                      Compra</a>
-                  </div>
+                   </div>
                 </li>
               </ul>
             </div>

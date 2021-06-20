@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nuestros postres son un arte hecho a mano, 
+        para degustar y sorprende a esa persona que tanto quieres."
+    />
+    <meta
+      name="keywords"
+      content="Recetas de postres, cupcakes, brownie, pie, macarrons, tematicos, crema, pedidos especiales"
+    />
+    <meta name="author" content="Roger Meza, mezaroger1@gmail.com" />
+    <title>Oliva Bakery. Pastelería y Repostería en Bogotá</title>
+    <link rel="icon" href="img/logo.png" />
+    <!-- link de css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- link de css bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- link iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Link de Animaciones-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
+    <style type="text/css">
+      a:link,
+      a:visited,
+      a:active {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Seccion de compra -->
+    <section id="comprar-productos">
+      <div class="container card" style="margin-top: 10px; margin-bottom: 60px">
+        <div class="row mt-3">
+          <div class="col">
+            <h2
+              class="
+                badge-dark
+                d-flex
+                justify-content-center
+                mb-3
+                font-weight-bold
+              "
+            >
+              Realizar Compra
+            </h2>
+            <form onsubmit="return mySubmitFunction(event)">
+              <div class="form-group row">
+                <label for="cliente" class="col-12 col-md-2 col-form-label h2"
+                  >Cliente :</label
+                >
+                <div class="col-12 col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="cliente"
+                    placeholder="Ingresa nombre cliente"
+                    name="destinatario"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-12 col-md-2 col-form-label h2"
+                  >Correo :</label
+                >
+
+                <div class="col-12 col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="correo"
+                    placeholder="Ingresa tu correo"
+                    name="cc_to"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-12 col-md-2 col-form-label h2"
+                  >Dirección :</label
+                >
+                <div class="col-12 col-md-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="correo"
+                    placeholder="Ingrese su dirección"
+                    name="cc_to"
+                  />
+                </div>
+              </div>
+              <div id="carrito-compra" class="form-group table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Imagen</th>
+                      <th scope="col">Nombre</th>
+                      <th scope="col">Precio</th>
+                      <th scope="col">Cantidad</th>
+                      <th scope="col">Sub Total</th>
+                      <th scope="col">Eliminar</th>
+                    </tr>
+                  </thead>
+                  <tbody id="tablafinalcompras"></tbody>
+                  <tr>
+                    <th colspan="4" scope="col" class="text-right">
+                      SUB TOTAL :
+                    </th>
+                    <th scope="col">
+                      <p id="subTotal"></p>
+                    </th>
+                    <th scope="col"></th>
+                  </tr>
+                  <tr>
+                    <th colspan="4" scope="col" class="text-right">IVA :</th>
+                    <th scope="col">
+                      <p id="iva"></p>
+                    </th>
+                    <th scope="col"></th>
+                  </tr>
+                  <tr>
+                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                    <th scope="col">
+                      <p id="total"></p>
+                    </th>
+                    <th scope="col"></th>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="row justify-content-between">
+                <div class="col-md-4 mb-2">
+                  <a href="index.html" class="btn btn-info btn-block"
+                    >Seguir comprando</a
+                  >
+                </div>
+                <div class="col-xs-12 col-md-4">
+                  <button
+                    class="btn btn-success btn-block"
+                    id="procesar-compra"
+                  >
+                    comprar
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  </body>
+</html>

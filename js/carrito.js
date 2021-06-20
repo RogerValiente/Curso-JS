@@ -26,4 +26,8 @@ const actualizarContador = () => {
     : 0;
 };
 
+function rederigirCheckout() {
+  window.open("/comprar.html", "_parent");
+}
+
 actualizarContador();
