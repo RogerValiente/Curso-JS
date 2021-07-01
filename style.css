@@ -76,7 +76,8 @@ img {
 
 #pasteleria,
 #postres,
-#detalles {
+#detalles,
+#nosotros {
   position: sticky;
   top: 60px;
   z-index: 20;
@@ -92,7 +93,8 @@ img {
 #pasteleria h2,
 #postres h2,
 #title-styc h2,
-#detalles h2 {
+#detalles h2,
+#nosotros h2 {
   background-color: rgba(61, 77, 70, 0.7);
   border-top: 2px solid #cccccc;
   border-right: 2px solid #333333;
@@ -435,13 +437,14 @@ footer .footer-copyright {
 
   #postres,
   #pasteleria,
-  #detalles {
+  #detalles #nosotros {
     height: 2.5rem;
   }
 
   #postres h2,
   #pasteleria h2,
-  #detalles h2 {
+  #detalles h2,
+  #nosotros h2 {
     font-size: 2rem;
   }
 

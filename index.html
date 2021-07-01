@@ -16,9 +16,10 @@
   <!-- link de css bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- link iconos -->
+  <!-- link iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 </head>
 
 <body class="bg-principal">
@@ -46,11 +47,8 @@
                 <a class="dropdown-item" href="#detalles">Detalles</a>
 
               </div>
-              <li class="nav-item">
-                <a class="nav-link" href="compra.html">Comprar</a>
-              </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="#nosotros">Nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contáctenos</a>
@@ -63,7 +61,8 @@
                   <img src="img/cart.png"></img>
                   <span id="cantidad" class="text-white"></span>
                   <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
-                    <button id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</button>
+                    <button id="vaciar-carrito" class="btn btn-primary" onclick="vaciarCarrito()">Vaciar
+                      Carrito</button>
                     <button class="btn btn-danger procesar-compra" onclick="rederigirCheckout()">Procesar
                       Compra</button>
                     <table id="lista-carrito" class="table">
@@ -73,14 +72,14 @@
                           <th>Imagen</th>
                           <th>Nombre</th>
                           <th>Precio</th>
-                          <th>Cantidad</th> 
+                          <th>Cantidad</th>
                           <th>Sub Total</th>
                           <th></th>
                         </tr>
                       </thead>
                       <tbody id="tablafinalcompras"></tbody>
                     </table>
-                   </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -88,7 +87,8 @@
           <form class="form-inline my-2 my-lg-0" id="formulario" action="">
             <input class="form-control mr-sm-2" id="buscador" type="text" placeholder="Buscar producto"
               aria-label="Search">
-            <button id="submit-buscador" class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            <button id="submit-buscador" class="btn btn-outline-success my-2 my-sm-0" type="submit"
+              onclick="filtrarProductos()">Buscar</button>
           </form>
         </div>
       </div>
@@ -140,7 +140,7 @@
         <h3 id="catalogo" onclick="obtenerDatos()">VER TODO LOS PRODUCTOS</h3>
       </a>
       <br>
-        </div>
+    </div>
   </section>
 
 
@@ -169,14 +169,14 @@
       </div>
       <div id="detallesCard" class="boxes-section">
       </div>
-      
+
       <!-- Seccion mostrar todos los productos -->
       <div id="pasteleria" class="w3-container-fluid w3-center w3-animate-right">
         <button class="btn btn-floating volver-catalogo">
           <h2>TODOS LOS PRODUCTOS</h2>
         </button>
       </div>
-      
+
       <div id="respuesta" class="boxes-section w3-container-fluid w3-justify w3-animate-right">
       </div>
     </div>
@@ -204,8 +204,74 @@
   <div class="boton-volver">
     <img src="img/flecha.webp" alt="" class="volver-arriba">
   </div>
-  
-  
+
+  <!-- Inicio Seccion nosotros-->
+  <section id="nosotros">
+    <h2>NOSOTROS</h2>
+  </section>
+  <section class="section-nosotros">
+    <div class="container w3-animate-left">
+      <div class="card mb-3" style="max-width: 1280px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./img/animacion/img04.jpg" class="card-img" alt="Compartiendo en familia">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Quiénes Somos</h2>
+              <p class="card-text">
+                Somos una empresa familiar enfocada en productos como panadería, pastelería, repostería, elaboramos
+                y organizamos eventos, creamos detalles y momentos especiales para cada ocasión, todos nuestros
+                productos son manufacturados con materia prima de alta calidad. Estamos comprometidos con la atención a
+                nuestros
+                clientes, brindándoles un excelente servicio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 1280px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./img/nosotros/img01.jpg" class="card-img" alt="Servicio al cliente">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Nuestra Visión</h2>
+              <p class="card-text">
+                Para el 2023 anhelamos ser una empresa familiar, reconocida en Colombia, por ofrecer productos de alta
+                calidad,
+                presentación, diseño y con la mejor atención al cliente, logrando así satisfacer y fidelizar nuestra
+                clientela.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 1280px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="./img/nosotros/img02.jpg" class="card-img" alt="Inovacion, calidad y diseños">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Nuestra Misión</h2>
+              <p class="card-text">
+                Nuestra misión es satisfacer y cumplir con las necesidades de nuestros clientes y consumidores,
+                brindando un servicio de calidad, con productos de gran innovación caracterizados por nuestros diseños
+                exclusivos,
+                variedad de sabores y presentacion de los mismos, estamos comprometidos ofreciendo un servicio
+                de excelente calidad. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Seccion nosotros-->
+
   <!-- Inicio footer Desktop-->
   <footer class="footer-bg d-none d-sm-none d-md-block">
     <div class="container">
@@ -298,17 +364,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
   </script>
-  <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js'>
   </script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/jquery.js"></script>
   <script src="js/api.json"></script>
   <script src="js/dom.js"></script>
   <script src="js/ajax.js"></script>
-  <script src="js/carrito.js"></script>
-  <script src="js/productosCarrito.js"></script>
-
+  <script src="js/FuncionesCarrito.js"></script>
 
 </body>
 

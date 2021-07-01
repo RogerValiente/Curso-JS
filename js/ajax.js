@@ -1,5 +1,4 @@
-//Aplicando Ajax
-
+//Aplicando Ajax para ver todos los productos
 function obtenerDatos() {
   console.log("funcion activada");
 
