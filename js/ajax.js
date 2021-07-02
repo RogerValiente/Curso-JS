@@ -22,7 +22,7 @@ function obtenerDatos() {
               <h3 class="card-title">${item.nombre}</h3>
               <p class="card-text">${item.descripcion}</p>
               <p class="precio font-weight-bold">${item.precio}</p>
-              <button class="btn btn-primary" onclick='agregarProductoCarrito({imagen:"${item.imagen}", id:"${item.id}", cantidad:"${item.cantidad}", nombre: "${item.nombre}", precio:"${item.precio}"})'>Agregar al
+              <button class="btn btn-primary" onclick='agregarProductos({imagen:"${item.imagen}", id:"${item.id}", cantidad:"${item.cantidad}", nombre: "${item.nombre}", precio:"${item.precio}"})'>Agregar al
     carrito</button>
             </div>
           </div>

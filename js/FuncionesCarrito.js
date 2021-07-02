@@ -67,8 +67,7 @@ function actualizarContador() {
 
 //Funcion para sumar el subtotal de los productos
 function productoSubtotal(precio, cantidad) {
-  precio = parseInt(precio.replace(/[$.]/g, ""));
-
+  // precio = parseInt(precio.replace(/[$.]/g, ""));
   return cantidad * precio;
 }
 
