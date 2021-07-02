@@ -109,6 +109,56 @@
                   />
                 </div>
               </div>
+              
+                <div className="card-header col">
+                  <h5 className="text-center">Datos de la tarjeta</h5>
+                </div>
+
+                <div class="col-12 col-md-10">
+                  <div className="col-md-6 col-sm-12 form-group px-2">
+                    <label>Nombre del titular</label>
+                    <input
+                      id="nombreTarjeta"
+                      type="text"
+                      className="form-control"
+                      placeholder="Como aparece en la tarjeta"
+                      name="nombreTarjeta"
+                    />
+                  </div>
+                  <div className="col-md-6 col-sm-12 form-group px-2">
+                    <label>Número de tarjeta</label>
+                    <input
+                      id="numeroTarjeta"
+                      type="number"
+                      className="form-control"
+                      placeholder="#"
+                      name="tarjeta"
+                    />
+                  </div>
+                </div>
+                <div className="form-row pb-3">
+                  <div className="col-md-6 col-sm-12 form-group px-2">
+                    <label>Fecha de vencimiento</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="MM/AA"
+                      name="vencimiento"
+                    />
+                  </div>
+                  <div className="col-md-6 col-sm-12 form-group px-2">
+                    <label>Código de seguridad</label>
+                    <input
+                      type="number"
+                      className="form-control"
+                      placeholder="CVV"
+                      name="cvv"
+                    />
+                  </div>
+               
+              
+
+              <!-- Carrito de compra -->
               <div id="carrito-compra" class="form-group table-responsive">
                 <table class="table">
                   <thead>
@@ -159,7 +209,7 @@
                     class="btn btn-success btn-block"
                     id="procesar-compra"
                   >
-                    comprar
+                    Pagar
                   </button>
                 </div>
               </div>

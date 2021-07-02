@@ -63,7 +63,14 @@ function mySubmitFunction(e) {
   e.preventDefault();
   let cliente = document.querySelector("#cliente").value;
   let correo = document.querySelector("#correo").value;
-  if (cliente == "" || correo == "") {
+  let nombreTarjeta = document.querySelector("#nombreTarjeta").value;
+  let numeroTarjeta = document.querySelector("#numeroTarjeta").value;
+  if (
+    cliente == "" ||
+    correo == "" ||
+    nombreTarjeta == "" ||
+    numeroTarjeta == ""
+  ) {
     toastr.error("Por favor llenar todo los campos");
     return;
   }
